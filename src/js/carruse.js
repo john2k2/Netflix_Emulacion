@@ -5,7 +5,7 @@ const adelante = document.querySelector(".adelante");
 adelante.addEventListener("click", function () {
   carrusel.scrollLeft += carrusel.offsetWidth;
 
-  if (carrusel.scrollLeft >= 3500) {
+  if (carrusel.scrollLeft >= carrusel.offsetWidth * 4) {
     carrusel.scrollLeft = 0;
   }
   console.log(carrusel.scrollLeft);
