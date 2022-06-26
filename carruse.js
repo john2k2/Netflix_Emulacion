@@ -3,9 +3,11 @@ const atras = document.querySelector(".atras");
 const adelante = document.querySelector(".adelante");
 
 adelante.addEventListener("click", function () {
-  carrusel.scrollLeft += carrusel.offsetWidth;
+  carrusel.scrollLeft != carrusel.scrollWidth
+    ? (carrusel.scrollLeft += carrusel.scrollWidth / 5)
+    : (carrusel.scrollLeft = carrusel.scrollWidth);
 
-  if (carrusel.scrollLeft >= carrusel.offsetWidth * 4) {
+  if (carrusel.scrollLeft >= carrusel.offsetWidth * 5) {
     carrusel.scrollLeft = 0;
   }
   console.log(carrusel.scrollLeft);
