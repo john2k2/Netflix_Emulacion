@@ -10,8 +10,6 @@ adelante.addEventListener("click", function () {
   if (carrusel.scrollLeft >= carrusel.offsetWidth * 5) {
     carrusel.scrollLeft = 0;
   }
-  console.log(carrusel.scrollLeft);
-  console.log(carrusel.scrollWidth);
 });
 
 atras.addEventListener("click", function () {
