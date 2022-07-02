@@ -1,5 +1,30 @@
-const btn = document.getElementById("btn");
+const carrusel = document.querySelector(".pelicula");
+const atras = document.querySelector(".atras");
+const adelante = document.querySelector(".adelante");
 
-btn.addEventListener("click", function () {
-  Swal.fire("Muy Bien", "Iniciaste Sesion con Exito!", "success");
+adelante.addEventListener("click", function () {
+  carrusel.scrollLeft != carrusel.scrollWidth
+    ? (carrusel.scrollLeft += carrusel.scrollWidth / 5)
+    : (carrusel.scrollLeft = carrusel.scrollWidth);
+
+  if (carrusel.scrollLeft >= carrusel.offsetWidth * 5) {
+    carrusel.scrollLeft = 0;
+  }
 });
+
+atras.addEventListener("click", function () {
+  carrusel.scrollLeft != carrusel.scrollWidth
+    ? (carrusel.scrollLeft -= carrusel.scrollWidth / 4)
+    : (carrusel.scrollLeft = carrusel.scrollWidth);
+
+  if (carrusel.scrollLeft <= 0) {
+    carrusel.scrollLeft = carrusel.scrollWidth;
+  }
+});
+
+function nombre() {
+  let nombre = localStorage.getItem("usuario");
+  let usuario = document.getElementById("usuario");
+  usuario.innerText = nombre;
+}
+nombre();
