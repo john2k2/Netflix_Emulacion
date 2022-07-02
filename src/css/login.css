@@ -180,11 +180,7 @@
     padding-left: 1rem;
   }
   body {
-<<<<<<< HEAD
     background-image: url(/src/img/fondo.jpg);
-=======
-    background-image: url(./src/img/AR-en-20220620-popsignuptwoweeks-perspective_alpha_website_small.jpg);
->>>>>>> 15309f5bec8cea60a1fc95b9525bd84a1da7f562
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
