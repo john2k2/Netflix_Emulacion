@@ -7,11 +7,3 @@ function showHide() {
 }
 
 document.querySelector("#boton").addEventListener("click", showHide);
-
-
-
-
-
-
-
-

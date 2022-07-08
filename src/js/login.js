@@ -18,7 +18,6 @@ function validarFormulario(e) {
     localStorage.getItem("usuario") === usuario &&
     localStorage.getItem("contraseña") === contraseña
   ) {
-    Swal.fire("Muy Bien", "Iniciaste Sesion con Exito!", "success");
     //Redireccionamos a la pagina principal
     window.location.href = "./index.html";
   } else if (
@@ -26,5 +25,8 @@ function validarFormulario(e) {
     localStorage.getItem("contraseña") !== contraseña
   ) {
     Swal.fire("Error", "Usuario o Contraseña Incorrectos", "error");
+  } else {
+    Swal.fire("Error", "No has iniciado sesion", "error");
   }
 }
+

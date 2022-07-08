@@ -21,3 +21,4 @@ atras.addEventListener("click", function () {
     carrusel.scrollLeft = carrusel.scrollWidth;
   }
 });
+
