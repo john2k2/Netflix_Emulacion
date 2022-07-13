@@ -18,43 +18,53 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container-principal">
         <div class="logo">
           <a href="login.html">
             <img src="src/img/Netflix_Logo_PMS.png" alt="Netflix" />
           </a>
           <a id="boton" class="show red" href="#">Explorar</a>
-          <a href="#">
-            <p>Niños</p>
-          </a>
           <div class="drop active" id="active">
-            <a href="#">Mi cuenta</a>
-            <a href="#">Peliculas</a>
+            <a href="#">Inicio</a>
             <a href="#">Series</a>
+            <a href="#">Peliculas</a>
+            <a href="#">Novedades Populares</a>
             <a href="#">Mi lista</a>
-            <a href="#">Mi cuenta</a>
           </div>
         </div>
         <div class="search">
-          <input type="text" placeholder="Buscar" />
-          <span class="material-symbols-outlined"> search </span>
+          <input class="ocultar" id="search1" type="text" placeholder="Buscar" />
+          <a id="boton2" href="#">
+            <span class=" material-symbols-outlined"> search </span>
+          </a>
+          <a href="#">Niños</a>
           <img src="src/img/asset 0.png" alt="Perfil" />
-          <p id="usuario"></p>
         </div>
       </div>
     </header>
-    <div class="container">
+    <body>
+      <div class="hero">
+        <img src="" alt="">
+        <div class="btn-video">
+        <button id="reproducir">
+          <a href="#">Reproducir</a>
+        </button>
+        <button id="informacion">
+          <a href="#">Mas Informacion</a>
+        </button>
+        </div>
+      </div>
+    <div class="container-lanzamiento">
       <div class="lanzamiento">
         <h1>Nuevos Lanzamientos</h1>
         <div class="btn"></div>
       </div>
     </div>
-    <div class="peliculas">
+    <div class="container-peliculas">
       <div class="pelicula" id="pelicula">
         <button class="atras">
           <span class="material-symbols-outlined"> arrow_back_ios </span>
         </button>
-
         <button class="adelante">
           <span class="material-symbols-outlined"> arrow_forward_ios </span>
         </button>
