@@ -177,9 +177,8 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 50vw;
+  width: 50%;
   height: 20%;
-  margin: auto;
 }
 footer p {
   color: #7a7878c4;
